@@ -8,50 +8,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
     <header class="header">
 <div class="container">
-<a href="#" class="header__logo">URLAUBSGLÜCK</a>
-<a href="#" class="header__log">Log in</a>
-<a href="#" class="header__link">Sign up</a>
+    <div class="header__box">
+<ul class="header__list">
+    <li class="header__item"><a href="./index.html" class="header__logo">URLAUBSGLÜCK</a></li>
+    <li class="header__item"><a href="#" class="header__log">Log in</a></li>
+    <li class="header__item"><a href="#" class="header__link">Sign up</a></li>
+</ul>
+</div>
+<h1 class="header__title">Share your holiday dreams</h1>
+<p class="header__text">And find the perfect partner to fullfill it</p>
+<button type="button" class="header__btn">Find your holiday partner</button>
 </div>
     </header>
     <main>
-<div class="container">
-<section class="hero">
-<h1 class="hero__title"></h1>Share your holiday dreams</h1>
-<p class="header__text">And find the perfect partner to fullfill it</p>
-<button type="button" class="hero__btn">Find your holiday partner</button>
 </section>
 <section class="partner">
+    <div class="container">
     <title class="parter__title">Meet a partner for your best holiday</title>
     <ul class="partner__list">
         <li class="partner__item">
-            <img src="" alt="man" class="partner__img">
+            <picture>
+                <source srcset="./images/desktop/bradleydesktop@1x.webp 1x, ./images/desktop/bradleydesktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tablet/bredleytablet@1x.webp 1x, ./images/tablet/bredleytablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./images/mobile/bredleymobail@1x.webp 1x, ./images/mobile/bredleymobail@2x.webp 2x" media="(max-width: 767px)">
+            <img src="./images/bredley.webp" alt="man" class="partner__img">
+        </picture>
             <h2 class="partner__title">Bradley Hunter</h2>
             <p class="partner__text">Based in Chicago. I love playing tennis and loud music.</p>
         </li>
         <li class="partner__item">
-            <img src="" alt="woman" class="partner__img">
+            <img src="./images/heather.webp" alt="woman" class="partner__img">
             <h2 class="partner__title">Heather Walker</h2>
             <p class="partner__text">I'm a happy person that loves cats and climbing on mountains.</p>
         </li>
         <li class="partner__item">
-            <img src="" alt="men" class="partner__img">
+            <img src="./images/lucas.webp" alt="men" class="partner__img">
             <h2 class="partner__title">Lucas Marsha</h2>
-            <p class="partner-text">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+            <p class="partner__text">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
         </li>
         <li class="partner__item">
-            <img src="" alt="woman" class="partner__img">
+            <img src="./images/hunter.webp" alt="woman" class="partner__img">
             <h2 class="partner__title">Bradley Hunter</h2>
             <p class="partner__text">Based in Chicago. I love playing tennis and loud music.</p>
         </li>
     </ul>
+    <div class="partner__center">
     <button type="button" class="partner__btn">See other partners</button>
-</section>
 </div>
+</div>
+</section>
     </main>
 </body>
 </html>

@@ -1,0 +1,68 @@
+.partner {
+padding-top: 65px;
+padding-bottom: 72px;
+
+&__title {
+    color: $text-color;
+text-align: center;
+font-size: 22px;
+font-weight: 700;
+line-height: 1.22;
+margin-bottom: 35px;
+}
+
+&__list{
+    display: flex;
+    gap: 2px;
+}
+
+
+&__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+&__title {
+    width: 224px;
+    color: $text-color;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.2;
+margin-top: 16px;
+margin-bottom: 13px;
+}
+
+
+
+
+&__text {
+    color: $war-color;
+text-align: center;
+font-family: "Roboto";
+font-size: 14px;
+font-weight: 300;
+line-height: 1.1;
+}
+
+&__center {
+    text-align: center;
+}
+
+&__btn {
+    color: $btn-color;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+line-height: 1.2;
+padding-top: 13px;
+padding-bottom: 13px;
+padding-left: 16px;
+padding-right: 17px;
+border-radius: 20px;
+outline: 1px solid $btn-color;
+background-color: $default-color;
+margin-top: 53px;
+}
+}
