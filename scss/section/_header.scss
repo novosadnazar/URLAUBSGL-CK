@@ -5,7 +5,29 @@
   padding-top: 201px;
   padding-bottom: 233px;
   text-align: center;
-  background-image: url(../images/hero.webp);
+  background-image: url(../images/mobile/heromobail@1x.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/heromobail@2x.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 233px;
+    background-image: url(../images/tablet/herotablet@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/herotablet@2x.webp);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/herodesktop@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/herodesktop@2x.webp);
+    }
 
 &__box {
   position: absolute;
@@ -137,3 +159,4 @@ animation-duration: 2000ms;
 
 
 
+}
